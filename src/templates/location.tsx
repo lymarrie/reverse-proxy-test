@@ -26,6 +26,7 @@ import List from "../components/list";
 import PageLayout from "../components/page-layout";
 import StaticMap from "../components/static-map";
 import Favicon from "../assets/images/yext-favicon.ico";
+import BannerImage from "../assets/images/tacos-1.avif";
 import "../index.css";
 
 /**
@@ -150,6 +151,10 @@ const Location: Template<TemplateRenderProps> = ({
     <>
       <PageLayout _site={_site}>
         <Banner name={name} address={address} />
+        <div>
+          <h2>Banner 2 (via vite asset import)</h2>
+          <img src={BannerImage}></img>
+        </div>
         <div className="centered-container">
           <div className="section">
             <div className="grid grid-cols-2 gap-x-10 gap-y-10">
