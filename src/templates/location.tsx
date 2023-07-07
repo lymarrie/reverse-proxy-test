@@ -113,7 +113,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         attributes: {
           rel: 'icon',
           type: 'image/x-icon',
-          href: Favicon
+          href: relativePrefixToRoot + Favicon
         },
       }
     ],
